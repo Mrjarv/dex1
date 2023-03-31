@@ -1,0 +1,45 @@
+import java.io.
+
+import java.sql.
+
+public class studentrecord
+
+public static void main(String a[])
+
+Connection con null;
+
+PreparedStatement ps-null; Statement stmt-null;
+
+ResultSet rs-null;
+
+try
+
+BufferedReader br new BufferedReader
+
+(new InputStreamReader(System.in));
+
+Class.forName("com.mysql.jdbc.Driver"); con DriverManager.getConnection ("jdbe:mysql://localhost/student","root".");
+
+while(true)
+
+System.out.println("1.Insert");
+
+System.out.println("2.Modify");
+
+System.out.println("3.Delete");
+
+System.out.println("4.View all");
+
+System.out.println("5.Search"); System.out.println("6.Exit");
+
+int ch-Integer.parseInt(br.readLine());
+
+switch(ch)
+
+case 1:
+
+ps con.prepareStatement
+
+("insert into student values(???)");
+
+System.out.println("Enter Roll Name Per:").
